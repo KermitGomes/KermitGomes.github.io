@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+    <script src="./scrtipt.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ewert&family=Oi&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        if (localStorage.getItem("tema") === "escuro") {
+            document.body.classList.add("dark-mode");
+        }
+    </script>
+    <!-- não dar flash na cara+ salvar inf -->
+    <button id="AbrirMN">☰ </button>
+    <!-- Abrir menu -->
+    <div>
+        <aside id="aside">
+            <h1>Menu</h1>
+            <a href="./index.html" class="links">Inicio</a><br>
+            <a href="./Receitas.html" class="links">Receitas</a><br>
+            <a href="./Contato.html" class="links">Contato</a><br
+            <a href="./Curriculo.html" class="links">Curriculo</a><br>
+            <div><br>
+                <button onclick="mudarTema()"><img id="theme" src="./icons/dark.svg" width="30"></img></button>
+            </div><br>
+            <div class="controles">
+                <button class="btn-topo" onclick="alterarFonte(1.1)">A+</button>
+                <button class="btn-topo" onclick="resetarFonte()">A</button>
+                <button class="btn-topo" onclick="alterarFonte(0.9)">A-</button>
+            </div>
+            SOBRE MIM<br>
+             <!-- Aumentar e diminuir fonte -->
+        </aside>
+        <script src="./script.js"></script>
+    </div>
+    <!-- Aside + Funções -->
+    <main id="main">
+        <div>
+            <section id="sobre-mim">
+
+
+                <h1 Class="Inicio">Sobre Mim</h1>
+                <div>
+                    <figure>
+                        <img src=".//icons/Perfil.jpg" class="foto-perfil">
+                        <img src=".//icons/perfil2.jpeg" class="foto-perfil">
+                        <img src=".//icons/perfil3.jpeg" class="foto-perfil">
+                        <img src=".//icons/perfil4.jpeg" class="foto-perfil">
+                    </figure>
+                </div>
+                <p Class="textos">
+                    Olá! Meu nome é <strong>João Pedro Riva Gomes</strong> e este espaço foi
+                    criado para compartilhar um pouco da minha trajetória pessoal,
+                    acadêmica e profissional.
+                </p>
+
+                <p class="Inicio">
+                    Nasci em Passo Fundo, no Rio Grande do Sul, e durante minha infância
+                    também tive a oportunidade de morar em cidades como Carazinho e Cruz Alta.
+                    Essas mudanças contribuíram para que eu conhecesse diferentes ambientes,
+                    pessoas e experiências, ajudando a moldar minha visão de mundo e minha
+                    forma de lidar com novos desafios.
+                </p>
+
+                <p class="Inicio">
+                    Atualmente trabalho na Majufer, onde construí uma parte importante da
+                    minha trajetória profissional. Minha jornada na empresa começou como
+                    menor aprendiz, função que exerci durante dois anos. Esse período foi
+                    fundamental para o meu desenvolvimento, pois me permitiu adquirir
+                    responsabilidades, disciplina e experiência no ambiente corporativo.
+                    Após essa etapa, passei a atuar na área de vendas, onde estou há três
+                    anos. Nesse cargo, venho desenvolvendo habilidades importantes, como
+                    comunicação, negociação, atendimento ao cliente e trabalho em equipe,
+                    competências que considero essenciais para qualquer profissional.
+                </p>
+
+                <p class="Inicio">
+                    Além da minha atuação profissional, sempre tive grande interesse pela
+                    área da tecnologia. Desde cedo, gosto de utilizar o computador não
+                    apenas para entretenimento, mas também para aprender coisas novas,
+                    pesquisar assuntos de meu interesse e explorar ferramentas tecnológicas.
+                    Com o passar do tempo, esse interesse se transformou em um objetivo
+                    profissional: ingressar na área de cibersegurança. Considero esse um
+                    dos setores mais importantes da tecnologia atualmente, pois está
+                    diretamente relacionado à proteção de dados, sistemas e informações.
+                    Meu objetivo é continuar estudando e me qualificando para construir
+                    uma carreira sólida nesse segmento.
+                </p>
+
+                <p class="Inicio">
+                    Nos momentos de lazer, valorizo muito o tempo que passo com pessoas
+                    importantes para mim. Acredito que os relacionamentos pessoais são
+                    fundamentais para o equilíbrio e o bem-estar. Também gosto de utilizar
+                    meu tempo livre para explorar novas tecnologias, navegar pela internet,
+                    aprender conteúdos relacionados à informática e, ocasionalmente,
+                    jogar videogame para relaxar e me divertir.
+                </p>
+
+                <p class="Inicio">
+                    Atualmente também estou investindo em minha formação acadêmica,
+                    buscando ampliar meus conhecimentos e me preparar para os desafios
+                    do mercado de trabalho. Acredito que o aprendizado é um processo
+                    contínuo e que sempre existe espaço para evolução, tanto no âmbito
+                    profissional quanto pessoal.
+                </p>
+
+                <p class="Inicio">
+                    Este blog foi desenvolvido como parte de um trabalho acadêmico, mas
+                    também representa uma oportunidade de apresentar minha história,
+                    minhas experiências e minhas metas para o futuro. Ao longo da minha
+                    trajetória, aprendi que dedicação, esforço e vontade de aprender são
+                    fatores fundamentais para alcançar objetivos e superar desafios.
+                </p>
+
+                <p class="Inicio">
+                    Espero que este espaço permita que você conheça um pouco mais sobre
+                    quem eu sou, de onde venho e quais são os caminhos que pretendo seguir
+                    nos próximos anos. Minha expectativa é continuar evoluindo, adquirindo
+                    novos conhecimentos e construindo uma carreira de sucesso na área da
+                    tecnologia, especialmente no campo da cibersegurança.
+                </p>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

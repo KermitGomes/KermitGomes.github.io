@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+    <script src="./scrtipt.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ewert&family=Oi&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        if (localStorage.getItem("tema") === "escuro") {
+            document.body.classList.add("dark-mode");
+        }
+    </script>
+    <!-- não dar flash na cara+ salvar inf -->
+    <button id="AbrirMN">☰ </button>
+    <!-- Abrir menu -->
+    <div>
+        <aside id="aside">
+            <h1>Menu</h1>
+            <a href="./index.html" class="links">Inicio</a><br>
+            <a href="./Receitas.html" class="links">Receitas</a><br>
+            <a href="./Contato.html" class="links">Contato</a><br <a href="./Sobre.html" class="links">Sobre</a><br>
+            <div><br>
+                <button onclick="mudarTema()"><img id="theme" src="./icons/dark.svg" width="30"></img></button>
+            </div><br>
+            <div class="controles">
+                <button class="btn-topo" onclick="alterarFonte(1.1)">A+</button>
+                <button class="btn-topo" onclick="resetarFonte()">A</button>
+                <button class="btn-topo" onclick="alterarFonte(0.9)">A-</button>
+            </div>
+            CURRICULO<br>
+            <!-- Aumentar e diminuir fonte -->
+        </aside>
+        <script src="./script.js"></script>
+    </div>
+    <!-- Aside + Funções -->
+    <main id="main">
+        <div>
+ <img src=".//icons/Perfil.jpg" class="fotoCR"><br>
+            <table border="1">
+                <tr>
+                    <th>Curso</th>
+                    <th>Instituição</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>Análise e Desenvolvimento de Sistemas</td>
+                    <td>UPF</td>
+                    <td>Em andamento</td>
+                </tr>
+
+                <tr>
+                    <td>Ensino Médio</td>
+                    <td>E.E.N.A.V</td>
+                    <td>Concluído</td>
+                </tr>
+            </table>
+
+            <h2 class="Inicio">Competências Técnicas</h2>
+
+            <table border="1">
+                <tr>
+                    <th>Competência</th>
+                    <th>Nível</th>
+                </tr>
+
+                <tr>
+                    <td>HTML</td>
+                    <td>Basico</td>
+                </tr>
+
+                <tr>
+                    <td>CSS</td>
+                    <td>Basico</td>
+                </tr>
+
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Básico</td>
+                </tr>
+
+                <tr>
+                    <td>Banco de Dados</td>
+                    <td>Básico</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>

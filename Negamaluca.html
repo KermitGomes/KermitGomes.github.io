@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <link href="./style.css" rel="stylesheet">
+    <!-- Fonte 1  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Fonte 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=Ewert&family=Oi&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        if (localStorage.getItem("tema") === "escuro") {
+            document.body.classList.add("dark-mode");
+        }
+    </script>
+    <!-- não dar flash na cara+ salvar inf -->
+    <div>
+        <button id="AbrirMN">☰ </button>
+    </div>
+    <!-- botão do menu -->
+    <div>
+        <aside id="aside">
+            <div>
+                <h1>Menu</h1>
+
+            </div>
+            <!-- Titulo -->
+            <a href="./index.html" class="links">Inicio</a><br>
+            <a href="./Receitas.html" class="links">Receitas</a><br>
+            <a href="./Sobre.html" class="links">Sobre</a><br>
+            <a href="./Contato.html" class="links">Contato</a><br>
+            <a href="./Curriculo.html" class="links">Curriculo</a><br>
+            <div>
+                <button onclick="mudarTema()"><img id="theme" src="icons/dark.svg"></img></button>
+            </div><br>
+            <!-- Mudar Tema -->
+            <div class="controles">
+                <button class="btn-topo" onclick="alterarFonte(1.1)">A+</button>
+                <button class="btn-topo" onclick="resetarFonte()">A</button>
+                <button class="btn-topo" onclick="alterarFonte(0.9)">A-</button>
+            </div><P></P>
+            RECEITA NEGA MALUCA<br>
+            <!-- Aumentar e diminuir fonte -->
+        </aside>
+        <!-- Aside -->
+    </div>
+    </div>
+<main id="main">
+        <div class="Texto">
+            <img src="icons/Receitas/Negamaluca.png" alt="Musse de Maracujá" class="Receita">
+   <h1> Receita de Nega Maluca</h1>
+
+        <h2>Ingredientes</h2>
+        <ul>
+            <li>3 ovos</li>
+            <li>2 xícaras de açúcar</li>
+            <li>1 xícara de chocolate em pó</li>
+            <li>2 xícaras de farinha de trigo</li>
+            <li>1 xícara de óleo</li>
+            <li>1 xícara de água quente</li>
+            <li>1 colher (sopa) de fermento em pó</li>
+        </ul>
+
+        <h2>Cobertura</h2>
+        <ul>
+            <li>4 colheres (sopa) de chocolate em pó</li>
+            <li>2 colheres (sopa) de manteiga</li>
+            <li>1 lata de leite condensado</li>
+        </ul>
+
+        <h2>Modo de Preparo</h2>
+        <ol>
+            <li>Pré-aqueça o forno a 180°C.</li>
+            <li>Bata os ovos, o açúcar e o óleo.</li>
+            <li>Adicione o chocolate em pó e misture bem.</li>
+            <li>Acrescente a farinha de trigo alternando com a água quente.</li>
+            <li>Por último, misture o fermento.</li>
+            <li>Despeje em uma forma untada.</li>
+            <li>Asse por cerca de 40 minutos.</li>
+        </ol>
+
+        <h2>Preparo da Cobertura</h2>
+        <ol>
+            <li>Leve todos os ingredientes ao fogo baixo.</li>
+            <li>Mexa até engrossar levemente.</li>
+            <li>Espalhe sobre o bolo ainda morno.</li>
+        </ol>
+        </div>    
+        </main>
+    </div>
+    </div>
+
+    </main>
+
+    <!-- Inicio -->
+    <script src="./script.js"></script>
+    <!-- Aside + Funções + fundo -->
+</body>
+
+</html>

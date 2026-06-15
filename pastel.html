@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <link href="./style.css" rel="stylesheet">
+    <!-- Fonte 1  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Fonte 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=Ewert&family=Oi&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        if (localStorage.getItem("tema") === "escuro") {
+            document.body.classList.add("dark-mode");
+        }
+    </script>
+    <!-- não dar flash na cara+ salvar inf -->
+    <div>
+        <button id="AbrirMN">☰ </button>
+    </div>
+    <!-- botão do menu -->
+    <div>
+        <aside id="aside">
+            <div>
+                <h1>Menu</h1>
+
+            </div>
+            <!-- Titulo -->
+            <a href="./index.html" class="links">Inicio</a><br>
+            <a href="./Receitas.html" class="links">Receitas</a><br>
+            <a href="./Sobre.html" class="links">Sobre</a><br>
+            <a href="./Contato.html" class="links">Contato</a><br>
+            <a href="./Curriculo.html" class="links">Curriculo</a><br>
+            <div>
+                <button onclick="mudarTema()"><img id="theme" src="icons/dark.svg"></img></button>
+            </div><br>
+            <!-- Mudar Tema -->
+            <div class="controles">
+                <button class="btn-topo" onclick="alterarFonte(1.1)">A+</button>
+                <button class="btn-topo" onclick="resetarFonte()">A</button>
+                <button class="btn-topo" onclick="alterarFonte(0.9)">A-</button>
+            </div><P></P>
+            RECEITA PASTEL<br>
+            <!-- Aumentar e diminuir fonte -->
+        </aside>
+        <!-- Aside -->
+    </div>
+    </div>
+
+ <main id="main">
+        <div class="Texto">
+            <img src="icons/Receitas/Pastel.jpg" alt="Musse de Maracujá" class="Receita">
+    <div class="container">
+        <h1>Receita de Pastel</h1>
+
+        <h2>Ingredientes da Massa</h2>
+        <ul>
+            <li>500 g de farinha de trigo</li>
+            <li>1 colher (sopa) de óleo</li>
+            <li>1 colher (chá) de sal</li>
+            <li>250 ml de água morna</li>
+        </ul>
+
+        <h2>Ingredientes do Recheio</h2>
+        <ul>
+            <li>300 g de carne moída refogada</li>
+            <li>1 tomate picado</li>
+            <li>Cheiro-verde a gosto</li>
+            <li>Sal e pimenta a gosto</li>
+        </ul>
+
+        <h2>Modo de Preparo</h2>
+        <ol>
+            <li>Misture a farinha, o sal e o óleo.</li>
+            <li>Adicione a água morna aos poucos e amasse até obter uma massa lisa.</li>
+            <li>Deixe descansar por 20 minutos.</li>
+            <li>Abra a massa com um rolo até ficar bem fina.</li>
+            <li>Corte em retângulos e coloque o recheio no centro.</li>
+            <li>Dobre a massa e feche as bordas com um garfo.</li>
+            <li>Frite em óleo quente até dourar.</li>
+            <li>Escorra em papel-toalha e sirva.</li>
+        </ol>
+
+    </div>
+    </main>
+
+    <!-- Inicio -->
+    <script src="./script.js"></script>
+    <!-- Aside + Funções + fundo -->
+</body>
+
+</html>

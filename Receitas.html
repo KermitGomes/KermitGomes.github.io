@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+    <script src="./scrtipt.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ewert&family=Oi&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        if (localStorage.getItem("tema") === "escuro") {
+            document.body.classList.add("dark-mode");
+        }
+    </script>
+    <!-- não dar flash na cara+ salvar inf -->
+    <button id="AbrirMN">☰ </button>
+    <!-- Botão do menu -->
+    <div>
+        <aside id="aside">
+            <h1>Menu</h1>
+            <a href="./index.html" class="links">Inicio</a><br>
+            <a href="./Sobre.html" class="links">Sobre</a><br>
+            <a href="./Contato.html" class="links">Contato</a></br>
+            <a href="./Curriculo.html" class="links">Curriculo</a><br>
+            <div><br>
+                <button onclick="mudarTema()"><img id="theme" src="./icons/dark.svg" width="30"></img></button>
+            </div><br>
+            <div class="controles">
+                <button class="btn-topo" onclick="alterarFonte(1.1)">A+</button>
+                <button class="btn-topo" onclick="resetarFonte()">A</button>
+                <button class="btn-topo" onclick="alterarFonte(0.9)">A-</button>
+            </div>
+            RECEITAS<br>
+            <!-- Aumentar e diminuir fonte -->
+        </aside>
+        <main>
+            <main id="main">
+                <div class="Inicio">
+                    <h1>ABAIXO TEMOS ALGUMA DAS RECEITAS QUE APRENDI RECENTEMENTE</h1>
+                    <a class="Receitaslog" href="./Musse de Maracujá.html">
+                        <img src="./icons/Receitas/Musse.jpg" alt="Musse de Maracujá">
+                    </a>
+
+                    <a class="Receitaslog" href="./Brawnie.html">
+                        <img src="./icons/Receitas/Brawnie.jpg" alt="Brownie">
+                    </a>
+
+                    <a class="Receitaslog" href="./Negamaluca.html">
+                        <img src="./icons/Receitas/Negamaluca.png" alt="Nega Maluca">
+                    </a>
+
+                    <a class="Receitaslog" href="./Pastel.html">
+                        <img src="./icons/Receitas/Pastel.jpg" alt="Pastel">
+                    </a>
+
+                </div>
+    </div>
+    </div>
+    </main>
+    <script src="./script.js"></script>
+    </div>
+    <!-- Aside + Funções -->
+</body>
+
+</html>
