@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.classList.add("dark-mode");
 
         if (icone) {
-            icone.src = "./icons/light.svg";
+            icone.src = "assets/icons/light.svg";
         }
     }
 
@@ -58,10 +58,10 @@ function mudarTema() {
     body.classList.toggle("dark-mode");
 
     if (body.classList.contains("dark-mode")) {
-        icone.src = "./icons/light.svg";
+        icone.src = "assets/icons/light.svg";
         localStorage.setItem("tema", "escuro");
     } else {
-        icone.src = "./icons/dark.svg";
+        icone.src = "assets/icons/dark.svg";
         localStorage.setItem("tema", "claro");
     }
 }

@@ -4,7 +4,7 @@ body {
     padding: 0;
 
     /* Fundo */
-    background-image: url('../icons/Fundo.jpg');
+    background-image: url('../assets/imagens/Fundo.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -160,7 +160,7 @@ main>div {
     border: 2px solid #bdbdbd;
 
     box-shadow: none;
-    /* 👈 aqui o neon some no modo claro */
+    
 
     background-color: #ffffff;
     color: #000;
