@@ -4,7 +4,7 @@ body {
     padding: 0;
 
     /* Fundo */
-    background-image: url('./icons/Fundo.jpg');
+    background-image: url('../icons/Fundo.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
